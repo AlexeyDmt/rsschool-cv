@@ -1,5 +1,2 @@
-# rsschool-cv
-## new_Title
-***  
-### some changes
-***  
+# Methodologies and tools of modern layout
+## first task
