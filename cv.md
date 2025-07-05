@@ -9,6 +9,11 @@
 ### Git, Github
 ### Figma, PhotosShop
 ---
+## Code
+```javascript
+console.log('Hello World');
+```
+---
 ## Courses
 ### Platform: WebReference
 ### Video courses: Youtube
