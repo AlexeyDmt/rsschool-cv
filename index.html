@@ -1,11 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My CV</title>
 </head>
+
 <body>
-    <div>Hello World!</div>
+
+    <aside class="aside">
+        <section class="aboutMe">
+            <h1 class="aboutMe__title">Alexey Dmitrievskiy</h1>
+            <p class="aboutMe__description">For a long time, Internet technologies have been like a hobby for me,
+                technical assistance in my wife's projects. SEO, contextual advertising, design sites. After a while, I
+                realized that frontend is the most interesting for me and my goal now is to master advanced skills in
+                HTML5, CSS3 and JavaScript.</p>
+        </section>
+        <section id="skills" class="skills">
+            <h2 class="skills__title">Skills</h2>
+            <ul class="skills__list">
+                <li class="skills__item">HTML</li>
+                <li class="skills__item">CSS</li>
+                <li class="skills__item">BootStrap</li>
+                <li class="skills__item">SASS</li>
+                <li class="skills__item">JavaScript</li>
+                <li class="skills__item">React</li>
+                <li class="skills__item">NodeJs</li>
+                <li class="skills__item">Express</li>
+                <li class="skills__item">Vite</li>
+                <li class="skills__item">Figma</li>
+                <li class="skills__item">PhotoShop</li>
+            </ul>
+        </section>
+        <section id="contacts" class="contacts">
+            <h2 class="contacts__title">Contacts</h2>
+            <ul class="contacts__list">
+                <li class="contacts__item"><a class="contacts__link" href="mailto:AlexeyDmt@gmail.com">Email</a></li>
+                <li class="contacts__item"><a class="contacts__link" href="https://t.me/AlexeyDmt">Telegram</a></li>
+                <li class="contacts__item"><a class="contacts__link"
+                        href="https://www.linkedin.com/in/alexey-d-834827254/">LinkedIn</a></li>
+            </ul>
+        </section>
+    </aside>
+
+    <div class="container">
+        <header class="header">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="#skills">Skills</a></li>
+                    <li class="header__item"><a class="header__link" href="#education">Education</a></li>
+                    <li class="header__item"><a class="header__link" href="#projects">Projects</a></li>
+                    <li class="header__item"><a class="header__link" href="#languages">Languages</a></li>
+                    <li class="header__item"><a class="header__link" href="#contacts">Contacts</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="mainContainer">
+
+            <section id="education" class="education">
+                <h2 class="education__title">Education</h2>
+                <ul class="education__list">
+                    <li class="education__item">
+                        <h3 class="education__item_title">HTML Academy</h3>
+                        <p class="education__item_description">Completed in 2023</p>
+                    </li>
+                    <li class="education__item">
+                        <h3 class="education__item_title">YouTube Courses</h3>
+                        <p class="education__item_description">2023 — Present</p>
+                    </li>
+                    <li class="education__item">
+                        <h3 class="education__item_title">ITMO University</h3>
+                        <p class="education__item_description">Completed in 2024</p>
+                    </li>
+                    <li class="education__item">
+                        <h3 class="education__item_title">RS School</h3>
+                        <p class="education__item_description">2024 — Present</p>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="projects" class="projects">
+                <h2 class="projects__title">Projects</h2>
+                <ul class="projects__list">
+                    <li class="projects__item">
+                        <h3 class="projects__item_title">Note-Taking App (MERN)</h3>
+                        <p class="projects__item_description">
+                            A simple CRUD app built with MongoDB, Express, React, and Node.js. <br>
+                            <a href="https://note-client-ygqc.onrender.com" target="_blank">View Project</a>
+                        </p>
+                    </li>
+                    <li class="projects__item">
+                        <h3 class="projects__item_title">React Translator</h3>
+                        <p class="projects__item_description">
+                            A translation app using React that integrates with the Google Translate API. <br>
+                            <a href="https://alexeydmt.github.io/translator/" target="_blank">View Project</a>
+                        </p>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="myCode">
+                <h2 class="myCode__title">Code</h2>
+                <pre class="myCode__block"><code>
+                console.log('Hello World!');
+                </code></pre>
+            </section>
+            <section id="languages" class="languages">
+                <h2 class="languages__title">Languages</h2>
+                <ul class="languages__list">
+                    <li class="languages__item">Russian — Native</li>
+                    <li class="languages__item">English — B1 (Pre-Intermediate)</li>
+                    <li class="languages__item">French — B1 (Pre-Intermediate)</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+    <footer class="footer">
+        <nav class="footer__nav">
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a href="https://github.com/AlexeyDmt" class="footer__link" target="_blank"><img class="footer__img" src="#" alt="GitHub profile link of AlexeyDmt"></a>                   
+                </li>
+                <li class="footer__item">
+                    <a href="https://rs.school/courses/javascript-preschool-ru" class="footer__link" target="_blank"><img class="footer__img" src="#" alt="Rolling Scopes School Logo"></a>
+                </li>
+            </ul>
+        </nav>
+        <p class="footer__copyright">©2025 by AlexeyDmt</p>
+    </footer>
 </body>
+
 </html>
