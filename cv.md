@@ -6,7 +6,7 @@
 
 ---
 
-For a long time, Internet technologies have been like a hobby for me, technical assistance in my wife's projects. SEO, contextual advertising, design sites. After a while, I realized that frontend is the most interesting for me and my goal now is to master advanced skills in HTML5, CSS3 and JavaScript.
+My journey into web technologies began as a hobby — helping with my wife's projects, exploring SEO, contextual advertising, and web design. Over time, I discovered that frontend development inspires me the most. Today, I'm focused on deepening my skills in HTML5, CSS3, and JavaScript to grow as a professional developer.
 
 ---
 

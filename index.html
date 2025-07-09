@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>My CV</title>
 </head>
 
@@ -11,11 +12,12 @@
 
     <aside class="aside">
         <section class="aboutMe">
+            <img src="assets/images/myPhoto.jpg" alt="My photo" class="aboutMe__photo">
             <h1 class="aboutMe__title">Alexey Dmitrievskiy</h1>
-            <p class="aboutMe__description">For a long time, Internet technologies have been like a hobby for me,
-                technical assistance in my wife's projects. SEO, contextual advertising, design sites. After a while, I
-                realized that frontend is the most interesting for me and my goal now is to master advanced skills in
-                HTML5, CSS3 and JavaScript.</p>
+            <p class="aboutMe__description">My journey into web technologies began as a hobby — helping with my wife's
+                projects, exploring SEO, contextual advertising, and web design. Over time, I discovered that frontend
+                development inspires me the most. Today, I'm focused on deepening my skills in HTML5, CSS3, and
+                JavaScript to grow as a professional developer.</p>
         </section>
         <section id="skills" class="skills">
             <h2 class="skills__title">Skills</h2>
@@ -85,7 +87,7 @@
                 <h2 class="projects__title">Projects</h2>
                 <ul class="projects__list">
                     <li class="projects__item">
-                        <h3 class="projects__item_title">Note-Taking App (MERN)</h3>
+                        <h3 class="projects__item_title">Simple Note App (MERN)</h3>
                         <p class="projects__item_description">
                             A simple CRUD app built with MongoDB, Express, React, and Node.js. <br>
                             <a href="https://note-client-ygqc.onrender.com" target="_blank">View Project</a>
@@ -116,20 +118,23 @@
                 </ul>
             </section>
         </main>
+
+        <footer class="footer">
+            <nav class="footer__nav">
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="https://github.com/AlexeyDmt" class="footer__link" target="_blank"><img
+                                class="footer__img" src="#" alt="GitHub profile link of AlexeyDmt"></a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="https://rs.school/courses/javascript-preschool-ru" class="footer__link"
+                            target="_blank"><img class="footer__img" src="#" alt="Rolling Scopes School Logo"></a>
+                    </li>
+                </ul>
+            </nav>
+            <p class="footer__copyright">©2025 by AlexeyDmt</p>
+        </footer>
     </div>
-    <footer class="footer">
-        <nav class="footer__nav">
-            <ul class="footer__list">
-                <li class="footer__item">
-                    <a href="https://github.com/AlexeyDmt" class="footer__link" target="_blank"><img class="footer__img" src="#" alt="GitHub profile link of AlexeyDmt"></a>                   
-                </li>
-                <li class="footer__item">
-                    <a href="https://rs.school/courses/javascript-preschool-ru" class="footer__link" target="_blank"><img class="footer__img" src="#" alt="Rolling Scopes School Logo"></a>
-                </li>
-            </ul>
-        </nav>
-        <p class="footer__copyright">©2025 by AlexeyDmt</p>
-    </footer>
 </body>
 
 </html>
