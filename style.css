@@ -3,3 +3,267 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+    background: #e4e4e1;
+}
+
+
+body {
+    display: flex;
+    max-width: 1024px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.leftSiide {
+    width: 30%;
+    margin-top: 100px;
+    padding: 10px;
+}
+
+.aside {
+    
+    line-height: 20px;
+}
+
+.aboutMe {
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.title {
+    font-size: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.photo {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.aboutMe__description {
+    font-size: 20px;
+    line-height: 25px;
+    padding: 5px;
+}
+
+.skills {
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.skills__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+
+.skills__list {
+    list-style-type: none;
+    padding-left: 25px;
+    line-height: 30px;
+}
+
+.skills__item {
+    font-size: 20px;
+}
+
+.contacts {
+    padding: 10px;
+}
+
+.contacts__title {
+    font-size: 25px;
+    margin-bottom: 20px;
+
+}
+
+.contacts__list {
+    list-style-type: none;
+    padding-left: 15px;
+    line-height: 30px;
+}
+
+.contacts__item {
+    font-size: 20px;
+}
+
+.contacts__link {
+    text-decoration: none;
+    color: black;
+}
+
+.container {
+    width: 70%;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+}
+
+.header__nav {}
+
+.header__list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.header__item {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.header__link {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    margin-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.mainContainer {
+    margin-bottom: 75px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.education,
+.projects,
+.myCode,
+.languages {
+    font-size: 20px;
+}
+
+.education__list,
+.projects__list,
+.languages__list {
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+.myCode__min {
+    display: none;
+}
+
+.education__item,
+.projects__item,
+.languages__item {
+    display: flex;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.education__item_title,
+.projects__item_title {
+    font-size: 20px;
+    width: 30%;
+
+}
+
+.projects__item_description {
+    width: 70%;
+}
+
+.projects__item_link {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: 10px;
+    margin-right: 50px;
+    font-weight: 700;
+    text-align: right;
+}
+
+
+.footer {
+    width: 100%;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.footer__img {
+    height: 75px;
+}
+
+.footer__copyright {
+    margin: 25px 10px 15px 0px;
+    font-weight: 700;
+    text-align: right;
+}
+
+@media (width < 768px) {
+    .header__list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (width < 669px) {
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__img {
+        height: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (width < 566px) {
+    .title {
+        font-size: 25px;
+    }
+
+    .mainContainer {
+        margin-top: 100px;
+    }
+
+    .education__item,
+    .projects__item,
+    .languages__item {
+        flex-wrap: wrap;
+    }
+
+    .education__item_title,
+    .projects__item_title {
+        font-size: 20px;
+        width: auto;
+
+    }
+
+    .projects__item_description {
+        width: auto;
+    }
+
+    .myCode__block {
+        display: none;
+    }
+
+    .myCode__min {
+        display: block;
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
