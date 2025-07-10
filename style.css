@@ -4,17 +4,29 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    background: #e4e4e1;
+}
+
 
 body {
     display: flex;
     max-width: 1024px;
     margin: 0 auto;
+    background: white;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
-.aside {
+.leftSiide {
     width: 30%;
     margin-top: 100px;
     padding: 10px;
+}
+
+.aside {
+    
     line-height: 20px;
 }
 
@@ -23,7 +35,7 @@ body {
     padding: 10px;
 }
 
-.aboutMe__title {
+.title {
     font-size: 30px;
     margin-top: 15px;
     margin-bottom: 30px;
@@ -31,7 +43,7 @@ body {
     line-height: 25px;
 }
 
-.aboutMe__photo {
+.photo {
     width: 100%;
     margin-bottom: 15px;
     border-radius: 5px;
@@ -99,13 +111,11 @@ body {
     margin-top: 50px;
 }
 
-.header__nav {
-    
-}
+.header__nav {}
 
 .header__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
 }
 
@@ -121,9 +131,139 @@ body {
     color: black;
 }
 
+main {
+    margin-top: 50px;
+    width: 90%;
+    margin: 0 auto;
 
+}
+
+.mainContainer {
+    margin-bottom: 75px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.education,
+.projects,
+.myCode,
+.languages {
+    font-size: 20px;
+}
+
+.education__list,
+.projects__list,
+.languages__list {
+    list-style-type: none;
+    padding-left: 25px;
+}
+
+.myCode__min {
+    display: none;
+}
+
+.education__item,
+.projects__item,
+.languages__item {
+    display: flex;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.education__item_title,
+.projects__item_title {
+    font-size: 20px;
+    width: 30%;
+
+}
+
+.projects__item_description {
+    width: 70%;
+}
+
+.projects__item_link {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: 10px;
+    margin-right: 50px;
+    font-weight: 700;
+    text-align: right;
+}
 
 
 .footer {
     width: 100%;
+}
+
+.footer__list {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.footer__img {
+    height: 75px;
+}
+
+.footer__copyright {
+    margin: 25px 10px 15px 0px;
+    font-weight: 700;
+    text-align: right;
+}
+
+@media (width < 768px) {
+    .header__list {
+        flex-wrap: wrap;
+    }
+}
+
+@media (width < 669px) {
+    .footer__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__img {
+        height: 50px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (width < 566px) {
+    .title {
+        font-size: 25px;
+    }
+
+    .mainContainer {
+        margin-top: 100px;
+    }
+
+    .education__item,
+    .projects__item,
+    .languages__item {
+        flex-wrap: wrap;
+    }
+
+    .education__item_title,
+    .projects__item_title {
+        font-size: 20px;
+        width: auto;
+
+    }
+
+    .projects__item_description {
+        width: auto;
+    }
+
+    .myCode__block {
+        display: none;
+    }
+
+    .myCode__min {
+        display: block;
+        font-size: 20px;
+        margin-top: 15px;
+    }
 }

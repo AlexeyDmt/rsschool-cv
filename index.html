@@ -9,16 +9,16 @@
 </head>
 
 <body>
-
+    <div class="leftSiide">
+    <img src="assets/images/myPhoto.jpg" alt="My photo" class="photo">
+    <h1 class="title">Alexey Dmitrievskiy</h1>
     <aside class="aside">
-        <section class="aboutMe">
-            <img src="assets/images/myPhoto.jpg" alt="My photo" class="aboutMe__photo">
-            <h1 class="aboutMe__title">Alexey Dmitrievskiy</h1>
+        <div class="aboutMe">
             <p class="aboutMe__description">My journey into web technologies began as a hobby — helping with my wife's
                 projects, exploring SEO, contextual advertising, and web design. Over time, I discovered that frontend
                 development inspires me the most. Today, I'm focused on deepening my skills in HTML5, CSS3, and
                 JavaScript to grow as a professional developer.</p>
-        </section>
+        </div>
         <section id="skills" class="skills">
             <h2 class="skills__title">Skills</h2>
             <ul class="skills__list">
@@ -46,10 +46,11 @@
             </ul>
         </section>
     </aside>
+    </div>
 
     <div class="container">
         <header class="header">
-            <nav class="header__nav">
+            <nav>
                 <ul class="header__list">
                     <li class="header__item"><a class="header__link" href="#skills">Skills</a></li>
                     <li class="header__item"><a class="header__link" href="#education">Education</a></li>
@@ -59,9 +60,9 @@
                 </ul>
             </nav>
         </header>
-        <main class="mainContainer">
+        <main>
 
-            <section id="education" class="education">
+            <section id="education" class="mainContainer education">
                 <h2 class="education__title">Education</h2>
                 <ul class="education__list">
                     <li class="education__item">
@@ -69,12 +70,12 @@
                         <p class="education__item_description">Completed in 2023</p>
                     </li>
                     <li class="education__item">
-                        <h3 class="education__item_title">YouTube Courses</h3>
-                        <p class="education__item_description">2023 — Present</p>
-                    </li>
-                    <li class="education__item">
                         <h3 class="education__item_title">ITMO University</h3>
                         <p class="education__item_description">Completed in 2024</p>
+                    </li>
+                    <li class="education__item">
+                        <h3 class="education__item_title">YouTube Courses</h3>
+                        <p class="education__item_description">2023 — Present</p>
                     </li>
                     <li class="education__item">
                         <h3 class="education__item_title">RS School</h3>
@@ -83,33 +84,46 @@
                 </ul>
             </section>
 
-            <section id="projects" class="projects">
+            <hr>
+
+            <section id="projects" class="mainContainer projects">
                 <h2 class="projects__title">Projects</h2>
                 <ul class="projects__list">
                     <li class="projects__item">
                         <h3 class="projects__item_title">Simple Note App (MERN)</h3>
                         <p class="projects__item_description">
-                            A simple CRUD app built with MongoDB, Express, React, and Node.js. <br>
-                            <a href="https://note-client-ygqc.onrender.com" target="_blank">View Project</a>
+                            A simple CRUD app built with MongoDB, Express, React, and Node.js.
+                            <br> <a class="projects__item_link" href="https://note-client-ygqc.onrender.com"
+                                target="_blank">View Project</a>
                         </p>
+
                     </li>
+                    
                     <li class="projects__item">
                         <h3 class="projects__item_title">React Translator</h3>
                         <p class="projects__item_description">
-                            A translation app using React that integrates with the Google Translate API. <br>
-                            <a href="https://alexeydmt.github.io/translator/" target="_blank">View Project</a>
+                            A translation app using React that integrates with the Google Translate API.
+                            <br> <a class="projects__item_link" href="https://alexeydmt.github.io/translator/"
+                                target="_blank">View Project</a>
                         </p>
                     </li>
                 </ul>
             </section>
 
-            <section class="myCode">
+            <hr>
+
+            <section class="mainContainer myCode">
                 <h2 class="myCode__title">Code</h2>
                 <pre class="myCode__block"><code>
-                console.log('Hello World!');
+    
+console.log('Hello World!');
                 </code></pre>
+                <p  class="myCode__min">console.log ('Hello World!');</p>
             </section>
-            <section id="languages" class="languages">
+
+            <hr>
+
+            <section id="languages" class="mainContainer languages">
                 <h2 class="languages__title">Languages</h2>
                 <ul class="languages__list">
                     <li class="languages__item">Russian — Native</li>
@@ -124,11 +138,13 @@
                 <ul class="footer__list">
                     <li class="footer__item">
                         <a href="https://github.com/AlexeyDmt" class="footer__link" target="_blank"><img
-                                class="footer__img" src="#" alt="GitHub profile link of AlexeyDmt"></a>
+                                class="footer__img" src="assets/images/github-svgrepo-com.svg"
+                                alt="GitHub profile link of AlexeyDmt"></a>
                     </li>
                     <li class="footer__item">
                         <a href="https://rs.school/courses/javascript-preschool-ru" class="footer__link"
-                            target="_blank"><img class="footer__img" src="#" alt="Rolling Scopes School Logo"></a>
+                            target="_blank"><img class="footer__img" src="assets/images/rs-school-logo.svg"
+                                alt="Rolling Scopes School Logo"></a>
                     </li>
                 </ul>
             </nav>
